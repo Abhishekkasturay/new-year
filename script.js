@@ -1,4 +1,4 @@
-const main = document.querySelector(".main");
+
 const box = document.querySelector(".box");
 const btnChange = document.querySelector(".btn");
 
