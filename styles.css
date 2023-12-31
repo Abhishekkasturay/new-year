@@ -27,7 +27,7 @@
 }
 
 .box2 {
-  height: 110vh;
+  height: 100vh;
   visibility: hidden;
   z-index: -10;
   display: none;
