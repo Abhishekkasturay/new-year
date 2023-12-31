@@ -3,17 +3,17 @@ const box2 = document.querySelector(".box2");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function () {
-  if (box1.classList.contains("active")) {
-    box1.classList.remove("active");
-  } else {
-    box2.classList.add("active");
-  }
+  // Toggle the "active" class on box1 and box2
+  box1.classList.toggle("active");
+  box2.classList.toggle("active");
 
+  // Check if box2 has the "active" class
   if (box2.classList.contains("active")) {
-    btn.style.visibility = "hidden";
+    btn.style.display = "none"; // Hide the button
   } else {
-    btn.style.visibility = "visible";
+    btn.style.display = "block"; // Show the button
   }
 });
+
 
 
