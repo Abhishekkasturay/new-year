@@ -1,9 +1,62 @@
-.resizable {
-  resize: both;
-  /* overflow: auto; */
+
+.main {
+  background-image: url(https://plus.unsplash.com/premium_photo-1669992229753-974230b109c2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.draggable {
+.box {
+  visibility: hidden;
+  z-index: -10;
+  text-align: center;
+}
+
+img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+}
+
+p {
+  top: 20vh;
+  left: 20vw;
   position: absolute;
-  cursor: grab;
+  color: azure;
+  font-size: 3vw;
+  font-weight: 800;
+  animation: bounce 1s infinite ease;
+  letter-spacing: 0.5vw;
+  white-space: nowrap;
+}
+
+.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.btn {
+  background-color: transparent;
+  color: black;
+  top: 50px;
+  left: 150px;
+  letter-spacing: normal;
+  box-shadow: 10px;
+  position: absolute;
+  transform: scale(2);
+  animation: bounce 1s infinite ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale();
+  }
+  100% {
+    transform: scale(1);
+  }
 }
