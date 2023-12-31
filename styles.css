@@ -1,65 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 0 20px;
 }
 
 .box1 {
-  height: 100vh;
-  visibility: visible;
-  z-index: 10;
-  display: flex;
-  overflow: hidden;
-  padding: 20px 20px;
-}
-
-.box1 img {
-  display: block;
-  max-width: 100%;
-}
-
-.set {
   visibility: hidden;
-  z-index: -10;
   display: none;
 }
 
 .box2 {
-  height: 100vh;
   visibility: hidden;
-  z-index: -10;
   display: none;
-  padding: 20px 20px;
 }
 
-.box2 img {
-  display: flex;
-  max-width: 100%;
-}
-
-.set2 {
+.active {
   visibility: visible;
-  z-index: 10;
-  display: flex;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 p {
   position: absolute;
   top: 15vh;
-  left: 20vh;
+  left: 10vh;
   color: white;
-  z-index: 20;
+  font-weight: 800;
   letter-spacing: normal;
+  overflow: hidden;
   animation: bounce 1s infinite ease;
 }
 
 .btn {
+  top: 15vh;
   position: absolute;
-  top: 10px;
-  left: 30px;
-  z-index: 10;
+  background-color: transparent;
+  border-radius: 10px;
   animation: bounce 1s infinite ease;
 }
 
