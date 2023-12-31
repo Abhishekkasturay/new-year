@@ -1,7 +1,8 @@
+const box1 = document.querySelector(".box1");
+const box2 = document.querySelector(".box2");
+const btn = document.querySelector(".btn");
 
-const box = document.querySelector(".box");
-const btnChange = document.querySelector(".btn");
-
-btnChange.addEventListener("click", function () {
-  box.classList.toggle("active");
+btn.addEventListener("click", function () {
+  box1.classList.toggle("set");
+  box2.classList.toggle("set2");
 });
